@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Small Mornings · Yakında</title>
+<meta name="description" content="Small Mornings: gecenin küçük saatleri ve gerçek sabahlar için. Yakında App Store'da.">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#FFF7F2">
+<link rel="canonical" href="https://smallmornings.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Small Mornings">
+<meta property="og:title" content="Small Mornings">
+<meta property="og:description" content="Gecenin küçük saatleri ve gerçek sabahlar için. Yakında App Store'da.">
+<meta property="og:url" content="https://smallmornings.com/">
+<meta property="og:image" content="https://smallmornings.com/assets/icon-256.png">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
+<link rel="apple-touch-icon" href="/assets/icon-256.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&amp;display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FFF7F2;
+    --surface: #FFFFFF;
+    --ink: #1E1815;
+    --ink-2: #5A504A;
+    --ink-3: #7D726B;
+    --hair: #EFE6DE;
+    --accent: #FF6B35;
+    --link: #C94A1A;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--bg); -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Nunito", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+  main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 40px 16px 24px;
+    padding-top: max(40px, env(safe-area-inset-top));
+  }
+  .card {
+    width: 100%;
+    background: var(--surface);
+    border-radius: 28px;
+    padding: 36px 24px 28px;
+    box-shadow: 0 2px 14px rgba(30, 24, 21, 0.045);
+    text-align: center;
+  }
+  .icon {
+    display: block;
+    width: 112px;
+    height: 112px;
+    margin: 0 auto 20px;
+    border-radius: 25px;
+    box-shadow: 0 6px 20px rgba(30, 24, 21, 0.08);
+  }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 10px; font-weight: 800; letter-spacing: -0.01em; }
+  .tagline { font-size: 18px; line-height: 1.45; margin: 0 0 4px; color: var(--ink); font-weight: 700; }
+  .tagline-en { font-size: 15px; margin: 0 0 22px; color: var(--ink-3); }
+  .status {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2px 8px;
+    padding: 8px 16px;
+    margin: 0 0 26px;
+    border: 1.5px solid var(--accent);
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--ink);
+  }
+  .status .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); flex: none; }
+  .status .en { font-weight: 400; color: var(--ink-3); }
+  .links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 20px;
+    padding-top: 18px;
+    border-top: 1px solid var(--hair);
+    margin: 0 0 10px;
+  }
+  a { color: var(--link); }
+  .links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .links a:hover, .links a:focus-visible { text-decoration: underline; }
+  .contact { margin: 0; font-size: 15px; color: var(--ink-2); }
+  .contact a { font-weight: 700; text-decoration: none; overflow-wrap: anywhere; }
+  .contact a:hover, .contact a:focus-visible { text-decoration: underline; }
+  footer {
+    text-align: center;
+    color: var(--ink-3);
+    font-size: 14px;
+    padding: 8px 16px 28px;
+    padding-bottom: max(28px, env(safe-area-inset-bottom));
+  }
+  @media (min-width: 600px) {
+    .card { padding: 48px 44px 36px; }
+    .icon { width: 128px; height: 128px; border-radius: 29px; }
+    h1 { font-size: 36px; }
+    .tagline { font-size: 20px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <section class="card" aria-labelledby="ad">
+    <img class="icon" src="/assets/icon-256.png" width="128" height="128" alt="Small Mornings uygulama ikonu">
+    <h1 id="ad">Small Mornings</h1>
+    <p class="tagline">Gecenin küçük saatleri ve gerçek sabahlar için.</p>
+    <p class="tagline-en" lang="en">For the small hours and the real mornings.</p>
+    <p class="status"><span class="dot" aria-hidden="true"></span><span>Yakında App Store'da</span><span class="en" lang="en">Coming soon to the App Store</span></p>
+    <nav class="links" aria-label="Bağlantılar">
+      <a href="/privacy/">Gizlilik politikası</a>
+      <a href="/privacy/en/" hreflang="en" lang="en">Privacy policy</a>
+    </nav>
+    <p class="contact">İletişim · <span lang="en">Contact</span>: <a href="mailto:erentepecik@erentepecik.com">erentepecik@erentepecik.com</a></p>
+  </section>
+</main>
+<footer>© 2026 Eren Tepecik</footer>
+</body>
+</html>
